@@ -16,6 +16,5 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),alioth thyme)
+ifneq ($(filter alioth thyme,$(TARGET_DEVICE)),)
 
-endif
